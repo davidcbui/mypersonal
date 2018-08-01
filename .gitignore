@@ -43,3 +43,4 @@ venv
 .vscode/
 dev-notes 
 tmp/
+.env
