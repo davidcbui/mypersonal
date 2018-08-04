@@ -9,6 +9,7 @@ from flask import (
     url_for,
 )
 from flask_mail import Mail, Message
+from flask_login import login_user, logout_user, login_required, current_user
 from . import home
 from .forms import UploadForm
 from werkzeug.utils import secure_filename
@@ -53,6 +54,7 @@ def get_cv():
 
 
 @home.route("/upload", methods=["GET", "POST"])
+@login_required
 def upload():
     title = "Upload File"
     form = UploadForm()
