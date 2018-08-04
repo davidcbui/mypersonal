@@ -44,3 +44,4 @@ venv
 dev-notes 
 tmp/
 .env
+.pytest_cache/
