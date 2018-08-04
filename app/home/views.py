@@ -1,12 +1,19 @@
-from flask import render_template, request, jsonify, send_from_directory
-
+import os
+from flask import (
+    current_app,
+    render_template,
+    request,
+    jsonify,
+    send_from_directory,
+    redirect,
+    url_for,
+)
 from flask_mail import Mail, Message
-
-# from ..email import send_email
-
-# import simplejson as json
 from . import home
-import webbrowser as wb
+from .forms import UploadForm
+from werkzeug.utils import secure_filename
+
+# import webbrowser as wb
 
 mail = Mail()
 
@@ -43,3 +50,18 @@ def get_cv():
     return send_from_directory(
         directory=directory, filename=mycv, mimetype="application/pdf"
     )
+
+
+@home.route("/upload", methods=["GET", "POST"])
+def upload():
+    title = "Upload File"
+    form = UploadForm()
+    if form.validate_on_submit():
+        f = form.uploadfile.data
+        filename = secure_filename(f.filename)
+
+        f.save(os.path.join(current_app.config["UPLOAD_FOLDER"], filename))
+        return redirect("/about")
+
+    return render_template("home/upload.html", title=title, form=form)
+

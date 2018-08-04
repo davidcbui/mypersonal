@@ -1,8 +1,16 @@
 from flask_wtf import FlaskForm
+from flask_wtf.file import FileField
+
+# from werkzeug.utils import secure_filename
 from wtforms import StringField, TextAreaField, BooleanField, SelectField, SubmitField
 from wtforms.validators import DataRequired, Length, Email, Regexp
 from wtforms import ValidationError
 from flask_pagedown.fields import PageDownField
+
+#
+
+
+#
 from ..models import Role, User
 
 
@@ -70,7 +78,3 @@ class CommentForm(FlaskForm):
     body = StringField("Enter your comment", validators=[DataRequired()])
     submit = SubmitField("Submit")
 
-
-# alternative way of using form
-class ContactForm(FlaskForm):
-    pass
