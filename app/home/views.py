@@ -17,6 +17,21 @@ from werkzeug.utils import secure_filename
 # import webbrowser as wb
 
 mail = Mail()
+# favourite links
+all_links = [
+    {
+        "name": "Creating Web API With Flask Python",
+        "link": "https://programminghistorian.org/en/lessons/creating-apis-with-python-and-flask",
+    },
+    {
+        "name": "Flask with Blueprint",
+        "link": "https://www.safaribooksonline.com/library/view/flask-web-development/9781491991725/ch02.html#ch_basic",
+    },
+    {
+        "name": "link 3",
+        "link": "https://programminghistorian.org/en/lessons/creating-apis-with-python-and-flask",
+    },
+]
 
 
 @home.route("/about")
@@ -66,4 +81,14 @@ def upload():
         return redirect("/about")
 
     return render_template("home/upload.html", title=title, form=form)
+
+
+@home.route("/api/v1/resources/links/all", methods=["GET"])
+def mylinks():
+    return jsonify(all_links)
+
+
+@home.route("/favorlinks")
+def show_favor_links():
+    return render_template("home/links.html", links=all_links)
 

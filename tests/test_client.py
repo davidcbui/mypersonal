@@ -70,3 +70,9 @@ class FlaskClientTestCase(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTrue("David Bui" in response.get_data(as_text=True))
 
+    def test_upload(self):
+        file = "/Users/davidbui/Downloads/computer.jpg"
+        response = self.client.post(
+            "/upload", data={"uploadfile": file}, follow_redirects=True
+        )
+        self.assertEqual(response.status_code, 200)

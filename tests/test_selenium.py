@@ -82,11 +82,22 @@ class SeleniumTestCase(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_admin_home_page(self):
+    def test_default_home_page(self):
         # navigate to home page
         self.client.get("http://localhost:5000/")
-        self.assertTrue(re.search("Hello,\s+Stranger!", self.client.page_source))
+        # self.client.get("http://localhost:5000/about")
+        # self.assertTrue(re.search("Hello,\s+Stranger!", self.client.page_source))
+        self.assertTrue(re.search("David Bui", self.client.page_source))
+        # navigate to login page
+        self.client.find_element_by_link_text("David Bui - Software Engineer").click()
+        self.assertTrue(re.search("About Me", self.client.page_source))
 
+    def test_admin_home_page(self):
+        # navigate to home page
+        self.client.get("http://localhost:5000/welcome")
+        # self.client.get("http://localhost:5000/about")
+        self.assertTrue(re.search("Hello,\s+Stranger!", self.client.page_source))
+        # self.assertTrue(re.search("David Bui", self.client.page_source))
         # navigate to login page
         self.client.find_element_by_link_text("Log In").click()
         self.assertIn("<h1>Login</h1>", self.client.page_source)
