@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block title %}{{ title }}{% endblock %} {% block page_content%}
+<div class="page-header">
+    <h3>Reference Links</h3>
+    <ul>
+        {% for link in links %}
+        <li>
+            <a href='{{link.link}}'>{{link.name}}</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+
+
+</div>
+
+{% endblock %} {% block scripts %} {{ super() }} {{ pagedown.include_pagedown() }} {% endblock %}
