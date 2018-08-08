@@ -46,3 +46,4 @@ tmp/
 .env
 .pytest_cache/
 uploads/
+test.jpg
