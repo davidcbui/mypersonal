@@ -28,8 +28,12 @@ all_links = [
         "link": "https://www.safaribooksonline.com/library/view/flask-web-development/9781491991725/ch02.html#ch_basic",
     },
     {
-        "name": "link 3",
-        "link": "https://programminghistorian.org/en/lessons/creating-apis-with-python-and-flask",
+        "name": "Guide to Build Better Predictive Models using Segmentation",
+        "link": "https://www.analyticsvidhya.com/blog/2016/02/guide-build-predictive-models-segmentation/",
+    },
+    {
+        "name": "link 4",
+        "link": "https://www.analyticsvidhya.com/blog/2016/02/guide-build-predictive-models-segmentation/",
     },
 ]
 
