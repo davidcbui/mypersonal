@@ -47,3 +47,5 @@ tmp/
 .pytest_cache/
 uploads/
 test.jpg
+.ipynb_checkpointds/
+*.ipynb

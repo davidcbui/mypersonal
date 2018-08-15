@@ -32,8 +32,12 @@ all_links = [
         "link": "https://www.analyticsvidhya.com/blog/2016/02/guide-build-predictive-models-segmentation/",
     },
     {
-        "name": "link 4",
-        "link": "https://www.analyticsvidhya.com/blog/2016/02/guide-build-predictive-models-segmentation/",
+        "name": "Using Python and Auto ARIMA to Forecast Seasonal Time Series",
+        "link": "https://medium.com/@josemarcialportilla/using-python-and-auto-arima-to-forecast-seasonal-time-series-90877adff03c",
+    },
+    {
+        "name": "Cluster & Segmentation Analysis",
+        "link": "http://inseaddataanalytics.github.io/INSEADAnalytics/CourseSessions/Sessions45/ClusterAnalysisReading.html",
     },
 ]
 
