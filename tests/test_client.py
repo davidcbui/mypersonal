@@ -76,3 +76,9 @@ class FlaskClientTestCase(unittest.TestCase):
             "/upload", data={"uploadfile": file}, follow_redirects=True
         )
         self.assertEqual(response.status_code, 200)
+    def test_lambda_services(self):
+        #tester = app.test_client()
+        #test_lambdaURL='https://348cozc0ed.execute-api.us-west-2.amazonaws.com/dev/hello'
+        response = self.client.get('/mylambda')
+        print('i got {}'.format(response))
+        self.assertEqual(response.status_code,200)

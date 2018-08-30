@@ -39,6 +39,10 @@ all_links = [
         "name": "Cluster & Segmentation Analysis",
         "link": "http://inseaddataanalytics.github.io/INSEADAnalytics/CourseSessions/Sessions45/ClusterAnalysisReading.html",
     },
+    {
+        'name':'SQLAlchemy CheatSheet',
+        'link':'https://www.pythonsheets.com/notes/python-sqlalchemy.html'
+    }
 ]
 
 
@@ -98,5 +102,9 @@ def mylinks():
 
 @home.route("/favorlinks")
 def show_favor_links():
-    return render_template("home/links.html", links=all_links)
+    return render_template("home/links.html", links=all_links) #all links predefined on top as list of dictionaries
+
+@home.route("/mylambda")
+def consume_myld():
+    return render_template("home/alltestgohere.html")    
 

@@ -296,4 +296,3 @@ class APITestCase(unittest.TestCase):
         data = open("test.jpg", "rb")
         s3.Bucket("myflasky-test").put_object(Key="test.jpg", Body=data)
         self.assertTrue(True)
-

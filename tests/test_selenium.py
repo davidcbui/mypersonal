@@ -108,6 +108,16 @@ class SeleniumTestCase(unittest.TestCase):
         self.client.find_element_by_name("submit").click()
         self.assertTrue(re.search("Hello,\s+admin2!", self.client.page_source))
 
+    
+
+
         # navigate to the user's profile page
         self.client.find_element_by_link_text("Profile").click()
         self.assertIn("<h1>admin2</h1>", self.client.page_source)
+  
+    def test_mylambda(self):
+        self.client.get("http://localhost:5000/mylambda")
+        # self.client.get("http://localhost:5000/about")
+        print('here is content from test_mylambda {}'.format(self.client.page_source))
+        #self.assertIn("<div id='all-output'>hello, world..here is lambda</div>", self.client.page_source)
+        self.assertTrue(re.search("hello", self.client.page_source))

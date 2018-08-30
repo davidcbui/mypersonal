@@ -1,0 +1,27 @@
+{% extends "base.html" %} {% block title %}{{ title }}{% endblock %} {% block page_content%}
+<div class="page-header">
+    <h3>Reserved for all testings output</h3>
+    <div id='all-output'></div>
+
+</div>
+<script src="static/js/jquery.js"></script>
+<script>
+    var url = 'https://348cozc0ed.execute-api.us-west-2.amazonaws.com/dev/hello';
+    var url2 = 'https://348cozc0ed.execute-api.us-west-2.amazonaws.com/dev/say';
+    //console.log('im here b4 ajax');
+    $.ajax({
+        url: url,
+        dataType: 'text',
+        success: function (data) {
+            console.log('am i here after ajax and data =' + data);
+
+            $('#all-output').html(data);
+        },
+        error: function (xhr, msgTxt, errorType) {
+            console.log(xhr);
+            console.log('got here then error= ' + errorType);
+        }
+
+    });
+</script>
+{% endblock %} {% block scripts %} {{ super() }} {{ pagedown.include_pagedown() }} {% endblock %}
