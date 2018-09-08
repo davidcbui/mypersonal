@@ -42,6 +42,10 @@ all_links = [
     {
         'name':'SQLAlchemy CheatSheet',
         'link':'https://www.pythonsheets.com/notes/python-sqlalchemy.html'
+    },
+    {
+       'name': 'Parabolic Stop N Reverse PSAR Implementation',
+       'link':'https://virtualizedfrog.wordpress.com/2014/12/09/parabolic-sar-implementation-in-python/'
     }
 ]
 
