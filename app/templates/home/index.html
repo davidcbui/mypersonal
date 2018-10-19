@@ -1,74 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>{{ title }}</title>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>{{ title }}</title>
 
-    <!-- Bootstrap -->
-    <link href="{{ url_for('static',filename='css/bootstrap.min.css') }}" rel="stylesheet ">
-    <link rel="stylesheet " href="{{ url_for('static',filename='css/font-awesome.css') }}">
-    <link rel="stylesheet " href="{{ url_for('static',filename='css/animate.css')  }}">
-    <link href="{{ url_for('static' , filename='css/style.css')}}" rel="stylesheet ">
+        <!-- Bootstrap -->
+        <link href="{{ url_for('static',filename='css/bootstrap.min.css') }}" rel="stylesheet ">
+        <link rel="stylesheet " href="{{ url_for('static',filename='css/font-awesome.css') }}">
+        <link rel="stylesheet " href="{{ url_for('static',filename='css/animate.css')  }}">
+        <link href="{{ url_for('static' , filename='css/style.css')}}" rel="stylesheet ">
 
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
-        rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
 
-</head>
+    </head>
 
-<body>
-    <div class="wrapper" id="wrapper">
-        <header>
-            <div class="banner row " id="banner ">
-                <div class="parallax text-center " style="background-image: url(static/img/computer-program.jpg); ">
-                    <div class="parallax-pattern-overlay ">
-                        <div class="container text-center " style="height:600px;padding-top:170px; ">
-                            <a href="# ">
-                                <img id="site-title " class=" wow fadeInDown " wow-data-delay="0.0s
-        "
-                                    wow-data-duration="0.9s " src="static/img/mypic-latest.png " alt=" David Bui Software Engineer"
-                                    width='250' height='' />
-                            </a>
-                            <h2 class="intro ">
-                                <a href="/viewcv" target="new">David Bui - Software Engineer</a>
-                            </h2>
+    <body>
+        <div class="wrapper" id="wrapper">
+            <header>
+                <div class="banner row " id="banner ">
+                    <div class="parallax text-center " style="background-image: url(static/img/computer-program.jpg); ">
+                        <div class="parallax-pattern-overlay ">
+                            <div class="container text-center " style="height:600px;padding-top:170px; ">
+                                <a href="# ">
+                                    <img id="site-title " class=" wow fadeInDown " wow-data-delay="0.0s
+        " wow-data-duration="0.9s " src="static/img/mypic-latest.png " alt=" David Bui Software Engineer" width='250' height=''/>
+                                </a>
+                                <h2 class="intro ">
+                                    <a href="/viewcv" target="new">David Bui - Software Engineer</a>
+                                </h2>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="menu ">
-                <div class="navbar-wrapper ">
-                    <div class="container ">
-                        <div class="navwrapper ">
-                            <div class="navbar navbar-inverse navbar-static-top ">
-                                <div class="container ">
-                                    <div class="navArea ">
-                                        <div class="navbar-collapse collapse ">
-                                            <ul class="nav navbar-nav ">
-                                                <li class="menuItem active ">
-                                                    <a href="#wrapper ">Home</a>
-                                                </li>
-                                                <li class="menuItem ">
-                                                    <a href="#aboutme ">About Me</a>
-                                                </li>
-                                                <li class="menuItem ">
-                                                    <a href="#myskills">Skills</a>
-                                                </li>
-                                                <li class="menuItem ">
-                                                    <a href="/viewcv">My Resume</a>
-                                                </li>
-                                                <li class="menuItem ">
-                                                    <a href="#education ">Education</a>
-                                                </li>
-                                                <li class="menuItem ">
-                                                    <a href="#contact ">Contact</a>
-                                                </li>
-                                            </ul>
+                <div class="menu ">
+                    <div class="navbar-wrapper ">
+                        <div class="container ">
+                            <div class="navwrapper ">
+                                <div class="navbar navbar-inverse navbar-static-top ">
+                                    <div class="container ">
+                                        <div class="navArea ">
+                                            <div class="navbar-collapse collapse ">
+                                                <ul class="nav navbar-nav ">
+                                                    <li class="menuItem active ">
+                                                        <a href="#wrapper ">Home</a>
+                                                    </li>
+                                                    <li class="menuItem ">
+                                                        <a href="#aboutme ">About Me</a>
+                                                    </li>
+                                                    <li class="menuItem ">
+                                                        <a href="#myskills">Skills</a>
+                                                    </li>
+                                                    <li class="menuItem ">
+                                                        <a href="/viewcv">My Resume</a>
+                                                    </li>
+                                                    <li class="menuItem ">
+                                                        <a href="#education ">Education</a>
+                                                    </li>
+                                                    <li class="menuItem ">
+                                                        <a href="#contact ">Contact</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -76,474 +74,334 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
+            </header>
 
-        <!--about us-->
-        <section class="aboutus " id="aboutus ">
-            <div class="container ">
-                <div class="heading text-center">
+            <!--about us-->
+            <section class="aboutus " id="aboutus ">
+                <div class="container ">
+                    <div class="heading text-center">
 
-                    <h2>
-                        <a name='aboutme'>A</a>bout Me
-                    </h2>
-                    <p class='text-primary'>Welcome and I am David Bui, your host. This is my personal site and I think
-                        you may just be curious about
-                        me.
-                        <br />I am a professional software engineer and have a passion in web development and fluent
-                        with many
-                        major programming languages...read on or
-                        <a href="/viewcv">download</a> my resume </p>
+                        <h2>
+                            <a name='aboutme'>A</a>bout Me
+                        </h2>
+                        <p class='text-primary'>Welcome and I am David Bui, your host. This is my personal site and I think you may just be curious about me.
+                            <br/>I am a professional software engineer and have a passion in web development and fluent with many major programming languages...read on or
+                            <a href="/viewcv">download</a>
+                            my resume
+                        </p>
 
+                        <!--<p class='text-primary' style='text-align:left; padding-top:100px'> I enjoy frontend tech stack as much as I do with backend. The latest frontend technologies I adapted to use on my development are ReActJS , VueJS , NodeJS and I make use of them depends on their suitability for project. <br/> Projects that I have built are: <ul> <li>Beauty Salon Management (MEAN stack NodeJS)</li> <li>Medical Record Retrieval Managements (LAMP stack - Laravel based)</li> <li>Truckie Milages Auto Paysheet (LAMP stack - Symfony )</li> <li>Appointment Bookings (LAMP stack - Laravel)</li> <li>Misc Tool for DB Analysis (Flask - Python with Panda)</li> <li>...many more</li> </ul> </p> -->
+                    </div>
 
+                </div>
+            </section>
 
-
-                    <!--<p class='text-primary' style='text-align:left; padding-top:100px'>
-
-                        I enjoy frontend tech stack as much as I do with backend. The latest frontend technologies I adapted to use on my development
-                        are ReActJS , VueJS , NodeJS and I make use of them depends on their suitability for project.
-                        <br/> Projects that I have built are:
-                        <ul>
-                            <li>Beauty Salon Management (MEAN stack NodeJS)</li>
-                            <li>Medical Record Retrieval Managements (LAMP stack - Laravel based)</li>
-                            <li>Truckie Milages Auto Paysheet (LAMP stack - Symfony )</li>
-                            <li>Appointment Bookings (LAMP stack - Laravel)</li>
-                            <li>Misc Tool for DB Analysis (Flask - Python with Panda)</li>
-                            <li>...many more</li>
-
-                        </ul>
-
-
-                    </p> -->
+            <!--skills-->
+            <section class="specialties " id="specialties ">
+                <div class="container ">
+                    <div class="heading text-center ">
+                        <h2>
+                            <a name='myskills'>M</a>y Skills</h2>
+                        <p class='text-primary'>Pictures are worth thoudsand words. Look at what I have to offer</p>
+                    </div>
                 </div>
 
-
-
-            </div>
-        </section>
-
-
-        <!--skills-->
-        <section class="specialties " id="specialties ">
-            <div class="container ">
-                <div class="heading text-center ">
-                    <h2>
-                        <a name='myskills'>M</a>y Skills</h2>
-                    <p class='text-primary'>Pictures are worth thoudsand words. Look at what I have to offer</p>
-                </div>
-            </div>
-
-            <div class="container ">
-                <div class="row ">
-                    <div class="col-md-6 wow fadeInRight " data-wow-offset="0 " data-wow-delay="0.3s "
+                <div class="container ">
+                    <div class="row ">
+                        <div class="col-md-6 wow fadeInRight " data-wow-offset="0 " data-wow-delay="0.3s " ">
+                            <div class=" skill ">
+                                <div class=" progress-wrap
                         ">
-    <div class=" skill ">
-        <div class=" progress-wrap
+                                    <h3>Linux / Apache / PHP / MySQL</h3>
+                                    <div class=" progress
                         ">
-            <h3>Linux / Apache / PHP / MySQL</h3>
-            <div class=" progress
-                        ">
-                <div class=" progress-bar color1 " role=" progressbar " aria-valuenow=" 40
+                                        <div class=" progress-bar color1 " role=" progressbar " aria-valuenow=" 40
                         " aria-valuemin=" 0 " aria-valuemax=" 100 " style=" width: 85%
                         ">
-                    <span class=" bar-width
+                                            <span class=" bar-width
                         ">85%</span>
-                </div>
+                                        </div>
 
-            </div>
-        </div>
+                                    </div>
+                                </div>
 
-        <div class="
+                                <div class="
                         progress-wrap ">
-            <h3>HTML5/CSS3/JQUERY/ReActJS</h3>
-            <div class="
+                                    <h3>HTML5/CSS3/JQUERY/ReActJS</h3>
+                                    <div class="
                         progress ">
-                <div class=" progress-bar color2 " role=" progressbar
+                                        <div class=" progress-bar color2 " role=" progressbar
                         " aria-valuenow=" 20 " aria-valuemin=" 0 " aria-valuemax=" 100 " style=" width: 95%
                         ">
-                    <span class=" bar-width
+                                            <span class=" bar-width
                         ">85%</span>
-                </div>
-            </div>
-        </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-        <div class="
+                                <div class="
                         progress-wrap ">
-            <h3>MongoDB/Express/Angular/NodeJS</h3>
-            <div class="
+                                    <h3>MongoDB/Express/Angular/NodeJS</h3>
+                                    <div class="
                         progress ">
-                <div class=" progress-bar color3 " role=" progressbar
+                                        <div class=" progress-bar color3 " role=" progressbar
                         " aria-valuenow=" 60 " aria-valuemin=" 0 " aria-valuemax=" 100 " style=" width: 90%
                         ">
-                    <span class=" bar-width
+                                            <span class=" bar-width
                         ">80%</span>
-                </div>
-            </div>
-        </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-        <div class="
+                                <div class="
                         progress-wrap ">
-            <h3>Python / C# / Java / C++</h3>
-            <div class="
+                                    <h3>Python / C# / Java / C++</h3>
+                                    <div class="
                         progress ">
-                <div class=" progress-bar color4 " role=" progressbar
+                                        <div class=" progress-bar color4 " role=" progressbar
                         " aria-valuenow=" 80 " aria-valuemin=" 0 " aria-valuemax=" 100 " style=" width: 90%
                         ">
-                    <span class=" bar-width
+                                            <span class=" bar-width
                         ">90%</span>
-                </div>
-            </div>
-        </div>
-         <div class="
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="
                         progress-wrap ">
-            <h3>Git/SVN/CSV/AWS/Docker</h3>
-            <div class=" progress
+                                    <h3>Git/AWS/Docker/DevOp</h3>
+                                    <div class=" progress
                         ">
-                <div class=" progress-bar color3 " role=" progressbar " aria-valuenow=" 60
+                                        <div class=" progress-bar color3 " role=" progressbar " aria-valuenow=" 60
                         " aria-valuemin=" 0 " aria-valuemax=" 100 " style=" width: 90%
                         ">
-                    <span class=" bar-width
+                                            <span class=" bar-width
                         ">80%</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-    <div class="
+                        <div class="
                         col-md-6 wow fadeInRight " data-wow-offset=" 0 " data-wow-delay=" 0.6s " ">
-                        <img src="static/img/team/computer6.jpg" class="img-responsive ">
+                            <img src="static/img/team/computer6.jpg" class="img-responsive ">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- for now hide this
-            <div class="container ">
-                <div class="row ">
-                    <div class="col-md-4 ">
-                        <div class="skills ">
-                            <h3 class="main text-center ">WEB DESIGN</h3>
-                            <div class="restitem clearfix ">
-                                <div class="rm-thumb " style="background-image: url(static/img/2.png) ">
-                                </div>
-                                <h5>HTML</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis dolor sit amet lacus
-                                    ultricies rutrum. Curabitur vitae fringilla elit. Sed at nunc congue, cursus erat ac,
-                                    pellentesque eros.
-                                </p>
-                            </div>
-                            <div class="restitem clearfix ">
-                                <div class="rm-thumb " style="background-image: url(static/img/2.png) ">
-                                </div>
-                                <h5>CSS</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis dolor sit amet lacus
-                                    ultricies rutrum. Curabitur vitae fringilla elit. Sed at nunc congue, cursus erat ac,
-                                    pellentesque eros.
-                                </p>
-                            </div>
-                            <div class="restitem clearfix ">
-                                <div class="rm-thumb " style="background-image: url(static/img/2.png) ">
-                                </div>
-                                <h5>JAVASCRIPT</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis dolor sit amet lacus
-                                    ultricies rutrum. Curabitur vitae fringilla elit. Sed at nunc congue, cursus erat ac,
-                                    pellentesque eros.
-                                </p>
+                <!-- for now hide this <div class="container "> <div class="row "> <div class="col-md-4 "> <div class="skills "> <h3 class="main text-center ">WEB DESIGN</h3> <div class="restitem clearfix "> <div class="rm-thumb " style="background-image: url(static/img/2.png) "> </div> <h5>HTML</h5> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis dolor sit amet lacus ultricies rutrum. Curabitur vitae fringilla elit. Sed at nunc congue, cursus erat ac, pellentesque eros. </p> </div> <div class="restitem clearfix "> <div class="rm-thumb " style="background-image: url(static/img/2.png) "> </div> <h5>CSS</h5> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis dolor sit amet lacus ultricies rutrum. Curabitur vitae fringilla elit. Sed at nunc congue, cursus erat ac, pellentesque eros. </p> </div> <div class="restitem clearfix "> <div class="rm-thumb " style="background-image: url(static/img/2.png) "> </div> <h5>JAVASCRIPT</h5> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis dolor sit amet lacus ultricies rutrum. Curabitur vitae fringilla elit. Sed at nunc congue, cursus erat ac, pellentesque eros. </p> </div> </div> </div> <div class="col-md-4 "> <div class="skills "> <h3 class="main text-center ">PHOTOGRAPHY</h3> <div class="restitem clearfix "> <div class="rm-thumb " style="background-image: url(static/img/2.png) "> </div> <h5>adipiscing elit</h5> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis dolor sit amet lacus ultricies rutrum. Curabitur vitae fringilla elit. Sed at nunc congue, cursus erat ac, pellentesque eros. </p> </div> <div class="restitem clearfix "> <div class="rm-thumb " style="background-image: url(static/img/2.png) "> </div> <h5>adipiscing elit</h5> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis dolor sit amet lacus ultricies rutrum. Curabitur vitae fringilla elit. Sed at nunc congue, cursus erat ac, pellentesque eros. </p> </div> <div class="restitem clearfix "> <div class="rm-thumb " style="background-image: url(static/img/2.png) "> </div> <h5>adipiscing elit</h5> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis dolor sit amet lacus ultricies rutrum. Curabitur vitae fringilla elit. Sed at nunc congue, cursus erat ac, pellentesque eros. </p> </div> </div> </div> <div class="col-md-4 "> <div class="skills "> <h3 class="main text-center ">PROGRAMMING</h3> <div class="restitem clearfix "> <div class="rm-thumb " style="background-image: url(static/img/2.png) "> </div> <h5>adipiscing elit</h5> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis dolor sit amet lacus ultricies rutrum. Curabitur vitae fringilla elit. Sed at nunc congue, cursus erat ac, pellentesque eros. </p> </div> <div class="restitem clearfix "> <div class="rm-thumb " style="background-image: url(static/img/2.png) "> </div> <h5>adipiscing elit</h5> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis dolor sit amet lacus ultricies rutrum. Curabitur vitae fringilla elit. Sed at nunc congue, cursus erat ac, pellentesque eros. </p> </div> <div class="restitem clearfix "> <div class="rm-thumb " style="background-image: url(static/img/2.png) "> </div> <h5>adipiscing elit</h5> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis dolor sit amet lacus ultricies rutrum. Curabitur vitae fringilla elit. Sed at nunc congue, cursus erat ac, pellentesque eros. </p> </div> </div> </div> </div> </div> -->
+            </section>
+
+            <!--portfolio section removed for now -->
+
+            <!--education-->
+            <section class="feedback " id="feedback ">
+                <div class="container ">
+                    <div class="heading ">
+
+                        <h2>
+                            <a name='education'>E</a>ducation</h2>
+
+                    </div>
+                </div>
+
+                <div class="container ">
+                    <div class="col-md-4 wow fadeInRight " data-wow-offset="0 " data-wow-delay="0.3s ">
+                        <div class="text-center ">
+                            <div class="hi-icon-wrap hi-icon-effect ">
+                                <h4>Bachelor of Science -Electrical Engineering</h4>
+                                <h5>QUT , Brisbane, Australia</h5>
+                                <i class="fa fa-laptop "></i>
+                                <p>&nbsp;</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 ">
-                        <div class="skills ">
-                            <h3 class="main text-center ">PHOTOGRAPHY</h3>
-                            <div class="restitem clearfix ">
-                                <div class="rm-thumb " style="background-image: url(static/img/2.png) ">
-                                </div>
-                                <h5>adipiscing elit</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis dolor sit amet lacus
-                                    ultricies rutrum. Curabitur vitae fringilla elit. Sed at nunc congue, cursus erat ac,
-                                    pellentesque eros.
-                                </p>
-                            </div>
-                            <div class="restitem clearfix ">
-                                <div class="rm-thumb " style="background-image: url(static/img/2.png) ">
-                                </div>
-                                <h5>adipiscing elit</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis dolor sit amet lacus
-                                    ultricies rutrum. Curabitur vitae fringilla elit. Sed at nunc congue, cursus erat ac,
-                                    pellentesque eros.
-                                </p>
-                            </div>
-                            <div class="restitem clearfix ">
-                                <div class="rm-thumb " style="background-image: url(static/img/2.png) ">
-                                </div>
-                                <h5>adipiscing elit</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis dolor sit amet lacus
-                                    ultricies rutrum. Curabitur vitae fringilla elit. Sed at nunc congue, cursus erat ac,
-                                    pellentesque eros.
-                                </p>
+
+                    <div class="col-md-4 wow fadeInRight " data-wow-offset="0 " data-wow-delay="0.6s ">
+                        <div class="text-center ">
+                            <div class="hi-icon-wrap hi-icon-effect ">
+                                <h4>Microsoft Certified System Engineer</h4>
+                                <h5>Brisbane , Australia</h5>
+                                <i class="fa fa-book "></i>
+                                <p>&nbsp;</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 ">
-                        <div class="skills ">
-                            <h3 class="main text-center ">PROGRAMMING</h3>
-                            <div class="restitem clearfix ">
-                                <div class="rm-thumb " style="background-image: url(static/img/2.png) ">
-                                </div>
-                                <h5>adipiscing elit</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis dolor sit amet lacus
-                                    ultricies rutrum. Curabitur vitae fringilla elit. Sed at nunc congue, cursus erat ac,
-                                    pellentesque eros.
-                                </p>
-                            </div>
-                            <div class="restitem clearfix ">
-                                <div class="rm-thumb " style="background-image: url(static/img/2.png) ">
-                                </div>
-                                <h5>adipiscing elit</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis dolor sit amet lacus
-                                    ultricies rutrum. Curabitur vitae fringilla elit. Sed at nunc congue, cursus erat ac,
-                                    pellentesque eros.
-                                </p>
-                            </div>
-                            <div class="restitem clearfix ">
-                                <div class="rm-thumb " style="background-image: url(static/img/2.png) ">
-                                </div>
-                                <h5>adipiscing elit</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis dolor sit amet lacus
-                                    ultricies rutrum. Curabitur vitae fringilla elit. Sed at nunc congue, cursus erat ac,
-                                    pellentesque eros.
-                                </p>
+
+                    <div class="col-md-4 wow fadeInRight " data-wow-offset="0 " data-wow-delay="0.9s ">
+                        <div class="text-center ">
+                            <div class="hi-icon-wrap hi-icon-effect ">
+                                <h4>Data Science -
+                                    <br/>Certification</h4>
+                                <h5>Houston ,TX</h5>
+                                <i class="fa fa-gear "></i>
+                                <p>&nbsp;</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div> 
-        -->
-        </section>
 
+                <div class="container ">
+                    <div class="row ">
+                        <blockquote>
+                            "Computers are getting smarter all the time. Scientists tell us that soon they will be able to talk to us. (And by 'they', I mean 'computers'. I doubt scientists will ever be able to talk to us.)"
 
-        <!--portfolio section removed for now -->
-
-
-
-        <!--education-->
-        <section class="feedback " id="feedback ">
-            <div class="container ">
-                <div class="heading ">
-
-                    <h2>
-                        <a name='education'>E</a>ducation</h2>
-
+                            <cite>Dave Barry, Artificial Intelligence
+                                <br/>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </cite>
+                        </blockquote>
+                        <blockquote>In software, we rarely have meaningful requirements. Even if we do, the only measure of success that matters is whether our solution solves the customer’s shifting idea of what their problem is.
+                            <cite>Jeff Atwood, Software Development
+                                <br/>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </cite>
+                        </blockquote>
+                    </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="container ">
-                <div class="col-md-4 wow fadeInRight " data-wow-offset="0 " data-wow-delay="0.3s ">
-                    <div class="text-center ">
-                        <div class="hi-icon-wrap hi-icon-effect ">
-                            <h4>Bachelor of Science -Electrical Engineering</h4>
-                            <h5>QUT , Brisbane, Australia</h5>
-                            <i class="fa fa-laptop "></i>
-                            <p>&nbsp;</p>
+            <!--education-->
+            <section class="contact" id="contact">
+                <div class="container">
+                    <div class="heading">
+                        <h2>
+                            <a name='contact'>C</a>ontact</h2>
+                        <h3>Drop me a note
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <!--put a form here-->
+                            <div id="sendmessage">Your message has been sent. Thank you!</div>
+                            <div id="errormessage"></div>
+                            <form action="" method="post" role="form" class="contactForm">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars"/>
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email"/>
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject"/>
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                    <div class="validation"></div>
+                                </div>
+
+                                <div class="text-center">
+                                    <button type="submit" class="contact submit">Send Message</button>
+                                </div>
+                            </form>
+                            <!-- end form of contact-->
                         </div>
+
                     </div>
                 </div>
 
-                <div class="col-md-4 wow fadeInRight " data-wow-offset="0 " data-wow-delay="0.6s ">
-                    <div class="text-center ">
-                        <div class="hi-icon-wrap hi-icon-effect ">
-                            <h4>Microsoft Certified System Engineer</h4>
-                            <h5>Brisbane , Australia</h5>
-                            <i class="fa fa-book "></i>
-                            <p>&nbsp;</p>
-                        </div>
-                    </div>
-                </div>
+            </section>
 
-                <div class="col-md-4 wow fadeInRight " data-wow-offset="0 " data-wow-delay="0.9s ">
-                    <div class="text-center ">
-                        <div class="hi-icon-wrap hi-icon-effect ">
-                            <h4>Data Science -
-                                <br />Certification</h4>
-                            <h5>Houston ,TX</h5>
-                            <i class="fa fa-gear "></i>
-                            <p>&nbsp;</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container ">
-                <div class="row ">
-                    <blockquote>
-                        "Computers are getting smarter all the time. Scientists tell us that soon they will be able to
-                        talk to us. (And by 'they',
-                        I mean 'computers'. I doubt scientists will ever be able to talk to us.)"
-
-                        <cite>Dave Barry, Artificial Intelligence
-                            <br />
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </cite>
-                    </blockquote>
-                    <blockquote>In software, we rarely have meaningful requirements. Even if we do, the only measure of
-                        success that
-                        matters is whether our solution solves the customer’s shifting idea of what their problem is.
-                        <cite>Jeff Atwood, Software Development
-                            <br />
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </cite>
-                    </blockquote>
-                </div>
-            </div>
-        </section>
-
-        <!--education-->
-        <section class="contact" id="contact">
-            <div class="container">
-                <div class="heading">
-                    <h2>
-                        <a name='contact'>C</a>ontact</h2>
-                    <h3>Drop me a note
-                    </h3>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <!--put a form here-->
-                        <div id="sendmessage">Your message has been sent. Thank you!</div>
-                        <div id="errormessage"></div>
-                        <form action="" method="post" role="form" class="contactForm">
-                            <div class="form-group">
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                                    data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                <div class="validation"></div>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                                    data-rule="email" data-msg="Please enter a valid email" />
-                                <div class="validation"></div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                                    data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                                <div class="validation"></div>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us"
-                                    placeholder="Message"></textarea>
-                                <div class="validation"></div>
-                            </div>
-
-                            <div class="text-center">
-                                <button type="submit" class="contact submit">Send Message</button>
-                            </div>
-                        </form>
-                        <!-- end form of contact-->
-                    </div>
-
+            <!--footer-->
+            <section class="footer" id="footer">
+                <p class="text-center">
+                    <a href="#wrapper" class="gototop">
+                        <i class="fa fa-angle-double-up fa-2x"></i>
+                    </a>
+                </p>
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-flickr"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <p>David Bui. Personal Home Site.
+                        <a href='/favorlinks'>Favorite Links</a>
+                    </p>
+                    <div class="credits"></div>
 
                 </div>
-            </div>
+            </section>
 
-        </section>
+        </div>
+        <script src="static/js/jquery.js"></script>
+        <script src="static/js/modernizr.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="static/js/bootstrap.min.js"></script>
+        <script src="static/js/menustick.js"></script>
+        <script src="static/js/parallax.js"></script>
+        <script src="static/js/easing.js"></script>
+        <script src="static/js/wow.js"></script>
+        <script src="static/js/smoothscroll.js"></script>
+        <script src="static/js/masonry.js"></script>
+        <script src="static/js/imgloaded.js"></script>
+        <script src="static/js/classie.js"></script>
+        <script src="static/js/colorfinder.js"></script>
+        <script src="static/js/gridscroll.js"></script>
+        <script src="static/js/contact.js"></script>
+        <script src="static/js/common.js"></script>
 
-        <!--footer-->
-        <section class="footer" id="footer">
-            <p class="text-center">
-                <a href="#wrapper" class="gototop">
-                    <i class="fa fa-angle-double-up fa-2x"></i>
-                </a>
-            </p>
-            <div class="container">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-pinterest"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-flickr"></i>
-                        </a>
-                    </li>
-                </ul>
-                <p>David Bui. Personal Home Site. <a href='/favorlinks'>Favorite Links</a></p>
-                <div class="credits"></div>
-
-
-            </div>
-        </section>
-
-    </div>
-    <script src="static/js/jquery.js"></script>
-    <script src="static/js/modernizr.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="static/js/bootstrap.min.js"></script>
-    <script src="static/js/menustick.js"></script>
-    <script src="static/js/parallax.js"></script>
-    <script src="static/js/easing.js"></script>
-    <script src="static/js/wow.js"></script>
-    <script src="static/js/smoothscroll.js"></script>
-    <script src="static/js/masonry.js"></script>
-    <script src="static/js/imgloaded.js"></script>
-    <script src="static/js/classie.js"></script>
-    <script src="static/js/colorfinder.js"></script>
-    <script src="static/js/gridscroll.js"></script>
-    <script src="static/js/contact.js"></script>
-    <script src="static/js/common.js"></script>
-
-    <script>
-        wow = new WOW({}).init();
-    </script>
-    <script type="text/javascript">
-        jQuery(function ($) {
-            $(document).ready(function () {
-                //enabling stickUp on the '.navbar-wrapper' class
-                $('.navbar-wrapper').stickUp({
-                    parts: {
-                        0: 'banner',
-                        1: 'aboutus',
-                        2: 'specialties',
-                        3: 'gallery',
-                        4: 'feedback',
-                        5: 'contact'
-                    },
-                    itemClass: 'menuItem',
-                    itemHover: 'active',
-                    topMargin: 'auto'
+        <script>
+            wow = new WOW({}).init();
+        </script>
+        <script type="text/javascript">
+            jQuery(function ($) {
+                $(document).ready(function () {
+                    //enabling stickUp on the '.navbar-wrapper' class
+                    $('.navbar-wrapper').stickUp({
+                        parts: {
+                            0: 'banner',
+                            1: 'aboutus',
+                            2: 'specialties',
+                            3: 'gallery',
+                            4: 'feedback',
+                            5: 'contact'
+                        },
+                        itemClass: 'menuItem',
+                        itemHover: 'active',
+                        topMargin: 'auto'
+                    });
                 });
+
             });
+        </script>
+        <script src="static/js/contactform.js"></script>
 
-
-        });
-    </script>
-    <script src="static/js/contactform.js"></script>
-
-
-</body>
+    </body>
 
 </html>
