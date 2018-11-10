@@ -1,52 +1,60 @@
-*.py[cod]
-
-# C extensions
-*.so
-
-# Packages
-*.egg
-*.egg-info
-dist
-build
-eggs
-parts
-bin
-var
-sdist
-develop-eggs
-.installed.cfg
-lib
-lib64
-__pycache__
-
-# Installer logs
-pip-log.txt
-
-# Unit test / coverage reports
-.coverage
-.tox
-nosetests.xml
-
-# Translations
-*.mo
-
-# Mr Developer
-.mr.developer.cfg
-.project
-.pydevproject
-
-# SQLite databases
-*.sqlite
-
-# Virtual environment
-venv
-.vscode/
-dev-notes 
-tmp/
 .env
-.pytest_cache/
-uploads/
-test.jpg
-.ipynb_checkpointds/
-*.ipynb
-testfi*.txt
+	.ipynb_checkpoints/
+	.pytest_cache/
+	.vscode/
+	*.ipynb
+	__pycache__/
+	app/__init__.pyc
+	app/__pycache__/
+	app/api/__init__.pyc
+	app/api/__pycache__/
+	app/api/authentication.pyc
+	app/api/comments.pyc
+	app/api/decorators.pyc
+	app/api/errors.pyc
+	app/api/posts.pyc
+	app/api/users.pyc
+	app/auth/__init__.pyc
+	app/auth/__pycache__/
+	app/auth/forms.pyc
+	app/auth/views.pyc
+	app/decorators.pyc
+	app/email.pyc
+	app/exceptions.pyc
+	app/fake.pyc
+	app/home/__init__.pyc
+	app/home/__pycache__/
+	app/home/forms.pyc
+	app/home/views.pyc
+	app/main/__init__.pyc
+	app/main/__pycache__/
+	app/main/errors.pyc
+	app/main/forms.pyc
+	app/main/views.pyc
+	app/models.pyc
+	app/tools/.pytest_cache/
+	app/tools/__pycache__/
+	app/tools/myiterator.pyc
+	app/tools/mypasslib.pyc
+	config.pyc
+	data-dev.sqlite
+	data.sqlite
+	dev-notes
+	flasky.pyc
+	migrations/__pycache__/
+	migrations/versions/__pycache__/
+	oil-gas-segmentation.ipynb
+	ss.db
+	test.jpg
+	testfile.txt
+	tests/__init__.pyc
+	tests/__pycache__/
+	tests/test_api.pyc
+	tests/test_basics.pyc
+	tests/test_client.pyc
+	tests/test_selenium.pyc
+	tests/test_user_model.pyc
+	tmp/
+	useful-tips-tricks.ipynb
+	venv/
+    aws-auth-cm.yaml
